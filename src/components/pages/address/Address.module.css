@@ -1,0 +1,13 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.label p {
+  margin-bottom: 3px;
+  margin-top: 25px;
+}
+
+.submit {
+  margin-top: 35px;
+}

@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 4px solid #2b2726;
+}
+
+.navbar_logo {
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #bacca4;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}

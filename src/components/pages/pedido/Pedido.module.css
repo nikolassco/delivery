@@ -1,0 +1,27 @@
+.pedido {
+  border-top: 4px solid #2b2726;
+}
+
+.confirm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.confirm a {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list button {
+  margin-left: 25px;
+}
