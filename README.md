@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# LANDING PAGE DELIVERY
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/nikolassco/delivery/blob/main/LICENSE) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sobre o projeto
 
-## Available Scripts
+Projeto desenvolvido utilizando ReactJS. 
 
-In the project directory, you can run:
+A proposta foi fazer uma página de vendas para um delivery de polpas de fruta, mas pode ser aplicado à outro produto, página onde é possível escolher o produto e quantidade de cada produto, remover produto da lista de compras, adicionar dados pessoais e de endereço para a entrega e por fim conferir os itens do pedido, para então ser redirecionado para o whatsapp e realizar o pedido. 
 
-### `npm start`
+## Layout
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_43_16.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_43_33.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_44_20.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_44_29.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_47_58.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_48_05.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_48_16.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_48_20.png)
+![Projeto](https://github.com/nikolassco/asset/blob/main/React%20App%20-%20Google%20Chrome%2004_08_2022%2016_48_26.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Mais detalhes sobre
+CRUD quase que por completo, com possibilidade de adicionar item, visualizar e remover.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Tecnologia: JavaScript / REACTJS
 
-### `npm test`
+# Link para testar o projeto e fazer pedido
+https://delivery-zap-nikolas.netlify.app/
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Como executar o projeto
 
-### `npm run build`
+## Pré-requisitos: É preciso ter o Node instalado para usar o NPM
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# clonar repositório
+git clone https://github.com/nikolassco/delivery.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Abra a pasta no VSCode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# baixar dependências
+npm install
+# e executar o projeto
+npm start
+```
 
-### `npm run eject`
+# Autor
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Nikolas Santa Clara
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://www.linkedin.com/in/nikolas-santa-clara-90619a16a/
