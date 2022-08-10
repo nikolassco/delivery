@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from "./Address.module.css";
-import { usePedidoContext } from '../../../hooks/usePedidoContext';
+import { usePedidoContext } from '../../hooks/usePedidoContext';
 import { useNavigate } from "react-router-dom";
 
 const Address = () => {

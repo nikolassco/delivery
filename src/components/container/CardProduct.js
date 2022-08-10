@@ -4,7 +4,7 @@ import Table from 'react-bootstrap/Table';
 
 import styles from './CardProduct.module.css';
 
-const CardProduct = ({ id, flavor, price }) => {
+const CardProduct = ({ flavor, price }) => {
   const [qtd, setQtd] = useState(0);
 
   const { handleAddItem } = usePedidoContext();
@@ -18,7 +18,7 @@ const CardProduct = ({ id, flavor, price }) => {
             <p>R$:{price.toFixed(2).replace('.', ',')}</p>
           </td>
           <td>
-            <button className="btn-confirm" onClick={(e) => {
+            <button className="btn-remove" onClick={(e) => {
               if (qtd > 0) {
                 setQtd(qtd - 1)
               }
@@ -32,7 +32,7 @@ const CardProduct = ({ id, flavor, price }) => {
             <button className="btn-confirm" onClick={(e) => setQtd(qtd + 1)}>+</button>
           </td>
           <td>
-            <button onClick={() => { if (qtd > 0) handleAddItem(id, qtd, flavor, price) }}>ADICIONAR</button>
+            <button onClick={() => { if (qtd > 0) handleAddItem(qtd, flavor, price) }}>ADICIONAR</button>
           </td>
         </tr>
       </tbody>

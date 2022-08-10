@@ -1,5 +1,5 @@
 import React from 'react';
-import { usePedidoContext } from '../../../hooks/usePedidoContext';
+import { usePedidoContext } from '../../hooks/usePedidoContext';
 
 const ConfirmPedido = () => {
   const { pedido, cliente, priceTotal } = usePedidoContext();

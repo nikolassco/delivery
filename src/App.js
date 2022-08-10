@@ -6,12 +6,12 @@ import {
 } from "react-router-dom";
 
 import Container from './components/container/Container';
-import Pedido from './components/pages/pedido/Pedido';
+import Pedido from './pages/pedido/Pedido';
 import Navbar from './components/navbar/Navbar';
-import Address from './components/pages/address/Address';
-import ConfirmPedido from './components/pages/confirmpedido/ConfirmPedido';
+import Address from './pages/address/Address';
+import ConfirmPedido from './pages/confirmpedido/ConfirmPedido';
 import Footer from './components/footer/Footer';
-import NotFound from './components/pages/notfound/NotFound';
+import NotFound from './pages/notfound/NotFound';
 
 function App() {
   return (

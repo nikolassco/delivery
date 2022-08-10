@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { usePedidoContext } from '../../../hooks/usePedidoContext';
+import { usePedidoContext } from '../../hooks/usePedidoContext';
 
 import styles from './Pedido.module.css';
 

@@ -9,7 +9,7 @@ const Container = () => {
     <div>
       <h1>Faça seu pedido</h1>
       {productsList.map((product) => (
-        <CardProduct key={product.id} id={product.id} flavor={product.flavor} price={product.price} />
+        <CardProduct key={product.id} flavor={product.flavor} price={product.price} />
       ))}
     </div>
   )

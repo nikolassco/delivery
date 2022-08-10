@@ -13,7 +13,7 @@ hr {
 
 button,
 .btn_submit {
-  background-color: transparent;
+  background-color: #edf3f6;
   border: 1px solid #000;
   border-radius: 10px;
   height: 30px;
@@ -25,17 +25,26 @@ a {
   color: #000;
 }
 
-.btn-confirm {
+.btn-confirm,
+.btn-remove {
   border-radius: 10px;
-  background-color: #7dad93;
+  /* background-color: #7dad93; */
   font-weight: bold;
   height: 30px;
   width: 30px;
   margin: 10px;
 }
 
+.btn-confirm {
+  background-color: green;
+}
+
+.btn-remove {
+  background-color: red;
+}
+
 .btn-disable {
-  /* background-color: #bacca4; */
+  background-color: #edf3f6;
   width: 30px;
   color: #000;
 }
