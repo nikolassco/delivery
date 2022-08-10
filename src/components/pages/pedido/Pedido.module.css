@@ -1,7 +1,3 @@
-.pedido {
-  border-top: 4px solid #2b2726;
-}
-
 .confirm {
   display: flex;
   justify-content: space-around;
@@ -9,11 +5,12 @@
   margin-top: 30px;
 }
 
-.confirm a {
-  border: 1px solid #ccc;
+.confirm a,
+.seta a {
+  border: 1px solid #000;
   border-radius: 10px;
   padding: 10px;
-  color: white;
+  color: #000;
 }
 
 .list {
@@ -24,4 +21,10 @@
 
 .list button {
   margin-left: 25px;
+}
+
+.seta {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 25px;
 }

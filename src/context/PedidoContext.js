@@ -7,12 +7,17 @@ export const PedidoContextProvider = ({ children }) => {
   const [priceTotal, setPriceTotal] = useState(0);
   const [cliente, setCliente] = useState({});
 
-  function handleAddItem(qtd, flavor, price) {
-    const priceItem = (qtd * price)
-    const items = { qtd, flavor, priceItem }
-    if (qtd > 0) {
-      setPedido([...pedido, items]);
-    }
+  function handleAddItem(id, qtd, flavor, price) {
+    let priceItem = (qtd * price);
+    let items = { id, qtd, flavor, priceItem }
+    const itemsExists = pedido.filter((item) => item.id === id);
+    console.log(itemsExists[0]);
+    // items = {
+    //   id: id.value += itemsExists.id.value,
+    // }
+    // if (qtd > 0) {
+    setPedido([...pedido, items]);
+    // }
     setPriceTotal(priceTotal + (price * qtd));
   }
 

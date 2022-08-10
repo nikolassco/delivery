@@ -3,17 +3,25 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 4px solid #2b2726;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px -2px 10px 0px;
+  padding: 0.8em;
 }
 
 .navbar_logo {
   font-family: cursive;
   font-weight: bold;
   font-size: 1.1em;
-  color: #bacca4;
+  /* background-color: linear-gradient(to right, #7dad93, #018790, #0a516d); */
+  color: #0a516d;
 }
 
 .navbar a {
   text-decoration: none;
   color: #000;
+}
+
+.navbar_qtd_itens {
+  background-color: #edf3f6;
+  padding: 0.2em 0.4em;
+  border-radius: 5px;
 }

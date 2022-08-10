@@ -2,12 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 5px;
   flex-wrap: nowrap;
-}
-
-.btn {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  padding: 5px;
+  margin: 1em;
 }

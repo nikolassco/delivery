@@ -19,8 +19,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<><Container /><Pedido /></>} />
+          <Route path="/" element={<Container />} />
           <Route path="/endereco" element={<Address />} />
+          <Route path="/pedido" element={<Pedido />} />
           <Route path="/comprar" element={<ConfirmPedido />} />
           <Route path='*' element={<NotFound />} />
         </Routes>

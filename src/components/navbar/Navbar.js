@@ -1,14 +1,16 @@
 import React from 'react';
 import styles from './Navbar.module.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { usePedidoContext } from '../../hooks/usePedidoContext';
 
 
 const Navbar = () => {
+  const { pedido } = usePedidoContext();
   return (
-    <div className={styles.navbar}>
-      <Link to='/'>Polpa <span className={styles.navbar_logo}>DiFruta</span></Link>
-      <p>Peça Já</p>
-    </div>
+    <nav className={styles.navbar}>
+      <NavLink to='/'>Polpa <span className={styles.navbar_logo}>DiFruta</span></NavLink>
+      <NavLink to='/pedido'>Ver Pedido <span className={styles.navbar_qtd_itens}>{pedido.length}</span></NavLink>
+    </nav>
   )
 }
 
