@@ -7,7 +7,11 @@ import styles from './CardProduct.module.css';
 const CardProduct = ({ flavor, price }) => {
   const [qtd, setQtd] = useState(0);
 
-  const { handleAddItem } = usePedidoContext();
+  const { handleAddItem, loading } = usePedidoContext();
+
+  if (loading) {
+    return <p>Carregando...</p>;
+  }
 
   return (
     <Table striped bordered hover className={styles.container}>

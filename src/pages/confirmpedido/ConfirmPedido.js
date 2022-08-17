@@ -21,16 +21,11 @@ const ConfirmPedido = () => {
 
   // const textoCliente = stringCliente.replace(/{"phone":"/g, "Telefone ").replace(/","name":"/, " nome ").replace(/","rua":"/, "\n Rua ").replace(/","numero":"/, " nº ").replace(/","bairro":"/, ", bairro ").replace(/","referencia":"/, " ponto de referência(se houver) ").replace(/"}/, "");
 
-  console.log(textoPedido)
-  // console.log(textoCliente)
-
   const textoTopo = `POLPA DELIVERY ${pularLinha}Meu nome é ${cliente.name}, contato ${cliente.phone} ${pularLinha}Meu pedido é: ${pularLinha}`;
 
   const textoFim = `${pularLinha}Valor total: ${priceTotal} reais ${pularLinha} ${pularLinha}Endereço da Entrega ${pularLinha}Rua: ${cliente.rua} ${pularLinha}Número: ${cliente.numero} ${pularLinha}Bairro: ${cliente.bairro} ${pularLinha}Referência: ${cliente.referencia}`;
 
   const url = `https://api.whatsapp.com/send?phone=5527988111598&text=${textoTopo + textoPedido + textoFim}`;
-
-  console.log(url);
 
   return (
     <div>
