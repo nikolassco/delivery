@@ -1,0 +1,17 @@
+.container {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+  padding: 0.8em;
+}
+
+.container p,
+.container a {
+  color: #fff;
+  font-weight: bold;
+}

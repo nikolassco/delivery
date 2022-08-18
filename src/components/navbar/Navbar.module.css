@@ -1,13 +1,9 @@
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   background-color: #edf3f6;
-  opacity: 0.9;
   padding: 0.8em;
 }
 

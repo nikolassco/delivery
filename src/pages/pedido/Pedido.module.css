@@ -1,3 +1,7 @@
+.pedido {
+  min-height: 80vh;
+}
+
 .confirm {
   display: flex;
   justify-content: space-around;
@@ -27,4 +31,8 @@
   text-align: left;
   margin-left: 25px;
   margin-top: 25px;
+}
+
+.pedidozerado {
+  margin-top: 15vh;
 }

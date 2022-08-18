@@ -12,8 +12,13 @@ import Address from './pages/address/Address';
 import ConfirmPedido from './pages/confirmpedido/ConfirmPedido';
 import Footer from './components/footer/Footer';
 import NotFound from './pages/notfound/NotFound';
+import { usePedidoContext } from './hooks/usePedidoContext';
+import Cart from './components/cart/Cart';
+
 
 function App() {
+  const { pedido } = usePedidoContext();
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -25,6 +30,7 @@ function App() {
           <Route path="/comprar" element={<ConfirmPedido />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
+        {pedido && pedido.length > 0 ? <Cart /> : ""}
         <Footer />
       </BrowserRouter>
     </div>

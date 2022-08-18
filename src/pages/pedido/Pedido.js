@@ -15,13 +15,13 @@ const Pedido = () => {
         </div>) : ""}
       <h1>Carrinho de compras</h1>
       {pedido && pedido.length === 0 ? (
-        <>
+        <div className={styles.pedidozerado}>
           <p>Você ainda não escolheu nenhum item</p>
           <p>Faça seu pedido</p>
           <div className={styles.confirm}>
             <Link to="/">PEDIR</Link>
           </div>
-        </>
+        </div>
       ) : pedido.map((item, index) => (
         <div key={index} className={styles.list}>
           <p>{item.qtd} polpas de {item.flavor}</p>
@@ -30,7 +30,7 @@ const Pedido = () => {
       ))
       }
       <div className={styles.confirm}>
-        <p>{priceTotal > 0 ? ` Preço total de R$: ${priceTotal.toFixed(2).replace('.', ',')}` : ""}</p>
+        <p>{priceTotal > 0 ? ` Preço total de R$ ${priceTotal.toFixed(2).replace('.', ',')}` : ""}</p>
         {priceTotal > 0 ? (
           <Link to="/endereco">CONTINUAR</Link>
         ) : ""}
