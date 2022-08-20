@@ -4,14 +4,14 @@ import { usePedidoContext } from '../../hooks/usePedidoContext';
 import { useNavigate } from "react-router-dom";
 
 const Address = () => {
-  const [phone, setPhone] = useState("");
-  const [name, setName] = useState("");
-  const [rua, setRua] = useState("");
-  const [numero, setNumero] = useState("");
-  const [bairro, setBairro] = useState("");
-  const [referencia, setReferencia] = useState("");
+  const { cliente, setCliente } = usePedidoContext();
 
-  const { setCliente } = usePedidoContext();
+  const [phone, setPhone] = useState(cliente ? cliente.phone : "");
+  const [name, setName] = useState(cliente ? cliente.name : "");
+  const [rua, setRua] = useState(cliente ? cliente.rua : "");
+  const [numero, setNumero] = useState(cliente ? cliente.numero : "");
+  const [bairro, setBairro] = useState(cliente ? cliente.bairro : "");
+  const [referencia, setReferencia] = useState(cliente ? cliente.referencia : "");
 
   const navigate = useNavigate();
 

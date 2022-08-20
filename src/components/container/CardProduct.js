@@ -20,12 +20,6 @@ const CardProduct = ({ flavor, price }) => {
             <p>R$ {price.toFixed(2).replace('.', ',')}</p>
           </td>
           <td>
-            {/* <button className="btn-remove" onClick={(e) => {
-              if (qtd > 0) {
-                setQtd(qtd - 1)
-              }
-            }
-            }>-</button> */}
             <button className={styles.button} onClick={(e) => {
               if (qtd > 0) {
                 setQtd(qtd - 1)
@@ -37,9 +31,7 @@ const CardProduct = ({ flavor, price }) => {
             <button disabled className="btn-disable">{qtd}</button>
           </td>
           <td>
-            {/* <button className="btn-confirm" onClick={(e) => setQtd(qtd + 1)}>+</button> */}
             <button className={styles.button} onClick={(e) => setQtd(qtd + 1)}><img src={imgMais} alt="button mais" /></button>
-
           </td>
           <td>
             <button onClick={() => { if (qtd > 0) handleAddItem(qtd, flavor, price) }}>ADICIONAR</button>
