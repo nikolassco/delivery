@@ -9,8 +9,14 @@ export const PedidoContextProvider = ({ children }) => {
 
   function handleAddItem(qtd, flavor, price) {
     const priceItem = (qtd * price);
-    const items = { qtd, flavor, priceItem }
-    setPedido([...pedido, items]);
+    const items = { qtd, flavor, priceItem };
+    if (pedido.find(item => item.flavor === items.flavor)) {
+      pedido.find(item => item.flavor === items.flavor ? items.qtd += item.qtd : "");
+      const filteredPedido = pedido.filter(item => item.flavor !== items.flavor);
+      setPedido([...filteredPedido, items]);
+    } else {
+      setPedido([...pedido, items]);
+    }
     setPriceTotal(priceTotal + (price * qtd));
   }
 

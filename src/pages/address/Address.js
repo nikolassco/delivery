@@ -37,7 +37,7 @@ const Address = () => {
         <div className={styles.label}>
           <label>
             <p>Telefone</p>
-            <input type="text" name="phone" placeholder="(27)9xxxxxxxx" value={phone} onChange={(e) => setPhone(e.target.value)} />
+            <input type="text" name="phone" placeholder="(27)9xxxxxxxx" value={phone || ''} onChange={(e) => setPhone(e.target.value)} />
           </label>
           <label>
             <p>Nome</p>

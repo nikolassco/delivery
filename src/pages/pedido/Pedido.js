@@ -24,7 +24,7 @@ const Pedido = () => {
         </div>
       ) : pedido.map((item, index) => (
         <div key={index} className={styles.list}>
-          <p>{item.qtd} polpas de {item.flavor}</p>
+          <p>{item.qtd} polpa(s) de {item.flavor}</p>
           <button onClick={() => handleRemoveItem(item, index)}>REMOVER</button>
         </div>
       ))

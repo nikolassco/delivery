@@ -7,9 +7,14 @@ import imgMenos from '../../images/menos.png';
 import styles from './CardProduct.module.css';
 
 const CardProduct = ({ flavor, price }) => {
+  const { handleAddItem } = usePedidoContext();
+
   const [qtd, setQtd] = useState(0);
 
-  const { handleAddItem } = usePedidoContext();
+  function handleAddItemAndClean(qtd, flavor, price) {
+    handleAddItem(qtd, flavor, price);
+    setQtd(0);
+  }
 
   return (
     <Table striped bordered hover className={styles.container}>
@@ -28,13 +33,13 @@ const CardProduct = ({ flavor, price }) => {
             }><img src={imgMenos} alt="button menos" /></button>
           </td>
           <td>
-            <button disabled className="btn-disable">{qtd}</button>
+            <p className="qtd-add">{qtd}</p>
           </td>
           <td>
             <button className={styles.button} onClick={(e) => setQtd(qtd + 1)}><img src={imgMais} alt="button mais" /></button>
           </td>
           <td>
-            <button onClick={() => { if (qtd > 0) handleAddItem(qtd, flavor, price) }}>ADICIONAR</button>
+            <button onClick={() => { if (qtd > 0) handleAddItemAndClean(qtd, flavor, price) }}>ADICIONAR</button>
           </td>
         </tr>
       </tbody>
