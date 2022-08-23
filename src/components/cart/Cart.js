@@ -16,7 +16,7 @@ const Cart = () => {
         <Link to='/pedido'>R$ {priceTotal.toFixed(2).replace('.', ',')}</Link>
       </p>
       <p>
-        <Link to='/endereco'>Finalizar Pedido</Link>
+        <Link to='/pedido'>Finalizar Pedido</Link>
       </p>
     </div>
   )
