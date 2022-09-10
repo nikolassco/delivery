@@ -8,8 +8,7 @@ export const PedidoContextProvider = ({ children }) => {
   const [cliente, setCliente] = useState({});
 
   function handleAddItem(qtd, flavor, price) {
-    const priceItem = (qtd * price);
-    const items = { qtd, flavor, priceItem };
+    const items = { qtd, flavor, price };
     if (pedido.find(item => item.flavor === items.flavor)) {
       pedido.find(item => item.flavor === items.flavor ? items.qtd += item.qtd : "");
       const filteredPedido = pedido.filter(item => item.flavor !== items.flavor);
@@ -23,7 +22,7 @@ export const PedidoContextProvider = ({ children }) => {
   function handleRemoveItem(item, index) {
     const filtrarPedido = pedido.filter(item => pedido.indexOf(item) !== index);
     setPedido(filtrarPedido);
-    setPriceTotal(priceTotal - (item.priceItem * item.qtd));
+    setPriceTotal(priceTotal - (item.price * item.qtd));
   }
 
   return (
